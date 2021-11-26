@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Listas circulares</title>
+</head>
+<body>
+    <h1>
+        Listas circulares
+    </h1>
+    <div> 
+        <h2>Bases</h2>
+
+        <div class="form-group">
+            
+            <input id="baseName" type="text" min="0" placeholder="Nombre">
+            <input id="baseMinutes" type="number" min="0" placeholder="Minutos"> <br><br>
+            <button class="btnAdd" id="btnAdd" type="submit">Añadir base</button>
+        </div>
+
+        <div id="a">
+            
+           
+            
+        </div>
+    </div>
+
+    <div> 
+        <h2>Crear tarjeta o eliminar bases</h2>
+
+        <div class="form-group">
+            <label class="textBox" for=""><b>Ruta:</b></label>
+            <select class="select" name="Hola" id="selectRuta">
+                <option value="null" disabled selected >Seleccionar</option>
+            </select>
+            <div>
+            <label class="textBox" for=""><b>Hora de Salida:</b></label>
+            <input id="horaSalida" type="time" min="0" placeholder="Hora">
+            </div>
+            <label class="textBox" for=""><b>Minutos en ruta:</b></label>
+            <input type="number" id="minutosCirculacion" placeholder="Minutos"> <br><br>
+            <button class="btnCard" id="createCard" type="submit">Crear tarjeta</button>
+            <button class="btnDelete" id="deleteBase" type="submit">Eliminar base</button>
+        </div>
+
+        <div class="tarjeta" id="tarjetaCreada">
+            
+            
+        </div>
+    </div>
+
+
+
+    <div> 
+
+        <h2>Listar bases</h2>
+
+        <div class="form-group">
+            <button class="btn" id="btnList" type="submit">Listar</button>
+            <button class="btn" id="btnListInvert" type="submit">Listar Inverso</button>
+        </div> <br>
+
+        <div id="listaHtml">
+            
+            
+        </div>
+    </div>
+
+    
+    <script src="main.js" type="module"></script>
+</body>
+</html>
